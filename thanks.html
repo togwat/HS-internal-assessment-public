@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Unique and limited rubik's cubes.">
+	<meta name="author" content="Max Fu">
+	<meta name="keywords" content="rubik's cubes, rubik's cube, rubiks cubes, rubiks cube, rubik, rubiks, rubik's, rubix cubes, rubix cube, rubix, custom, limited">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://kit.fontawesome.com/aa07287191.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="responsive.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo-blue.svg"/>
+	<title>Thank you</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="scripts/header-responsiveness.js"></script>
+	<script src="scripts/cart-number.js"></script>
+</head>
+
+<body>
+	<!--Dark overlay for responsive header menu-->
+	<div class="header-responsive-overlay">
+	</div>
+
+	<!--Navbar-->
+	<header>
+		<!--Navbar logo-->
+		<a class="navbar navbar-logo" href="index.html">
+			<img class="navbar-logo-image" src="images/logo-blue.svg" alt="Navbar logo that goes to home page.">
+		</a>
+
+		<!--Navbar links-->
+        <div class="navbar navbar-links-container">
+            <a class="navbar-links" href="shop.html" id="navbar-links-shop">Shop</a>
+            <a class="navbar-links" href="about.html" id="navbar-links-about">About</a>
+            <a class="navbar-links" href="cart.html" id="navbar-links-cart">Cart</a>
+        </div>
+
+		<!--Navbar search bar-->
+		<div class="navbar navbar-search-bar-container">
+			<input type="text" class="navbar-search-bar" placeholder="search">
+		</div>
+
+		<!--Phone responsive-->
+		<span class="navbar-menu-icon fas fa-bars">
+		</span>
+		<!--Responsive menu-->
+		<div class="navbar-links-responsive-container">
+			<a class="navbar-links-responsive" href="index.html">Home</a>
+			<a class="navbar-links-responsive" href="shop.html">Shop</a>
+            <a class="navbar-links-responsive" href="about.html">About</a>
+            <a class="navbar-links-responsive" href="cart.html">Cart</a>
+		</div>
+
+		<span class="navbar-search-icon fas fa-search">
+		</span>
+	</header>
+
+	<div class="thanks-page-content">
+		<h1 class="thanks-header">Thank you!</h1>
+		<p class="thanks-message">Thank you for purchasing our rubik's cubes. Your order is being prepared right now, and they will be delivered to your address in about a week. In the mean time, you can continue exploring our website.</p>
+
+		<div class="thanks-button-container">
+			<a href="shop.html" class="thanks-button" id="shop">Keep shopping</a>
+			<a href="index.html" class="thanks-button" id="home">Go to home</a>
+		</div>
+	</div>
+</body>

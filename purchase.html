@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Unique and limited rubik's cubes.">
+	<meta name="author" content="Max Fu">
+	<meta name="keywords" content="rubik's cubes, rubik's cube, rubiks cubes, rubiks cube, rubik, rubiks, rubik's, rubix cubes, rubix cube, rubix, custom, limited">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://kit.fontawesome.com/aa07287191.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="responsive.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo-blue.svg"/>
+	<title>Address</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="scripts/purchase-total-price.js"></script>
+	<script src="scripts/purchase-form.js"></script>
+	<script src="scripts/header-responsiveness.js"></script>
+	<script src="scripts/cart-number.js"></script>
+</head>
+
+<body>
+	<!--Dark overlay for responsive header menu-->
+	<div class="header-responsive-overlay">
+	</div>
+
+	<!--Navbar-->
+	<header>
+		<!--Navbar logo-->
+		<a class="navbar navbar-logo" href="index.html">
+			<img class="navbar-logo-image" src="images/logo-blue.svg" alt="Navbar logo that goes to home page.">
+		</a>
+
+		<!--Navbar links-->
+        <div class="navbar navbar-links-container">
+            <a class="navbar-links" href="shop.html" id="navbar-links-shop">Shop</a>
+            <a class="navbar-links" href="about.html" id="navbar-links-about">About</a>
+            <a class="navbar-links" href="cart.html" id="navbar-links-cart">Cart</a>
+        </div>
+
+		<!--Navbar search bar-->
+		<div class="navbar navbar-search-bar-container">
+			<input type="text" class="navbar-search-bar" placeholder="search">
+		</div>
+
+		<!--Phone responsive-->
+		<span class="navbar-menu-icon fas fa-bars">
+		</span>
+		<!--Responsive menu-->
+		<div class="navbar-links-responsive-container">
+			<a class="navbar-links-responsive" href="index.html">Home</a>
+			<a class="navbar-links-responsive" href="shop.html">Shop</a>
+            <a class="navbar-links-responsive" href="about.html">About</a>
+            <a class="navbar-links-responsive" href="cart.html">Cart</a>
+		</div>
+
+		<span class="navbar-search-icon fas fa-search">
+		</span>
+	</header>
+
+	<button type="button" class="purchase-back-button"><i class="fas fa-arrow-left"></i> Go back</button>
+
+	<!--Progress bar-->
+	<div class="progress-bar-container">
+		<div class="progress-bar-background">
+			<!--Progress bar dots added via javascript-->
+			<span class="progress-bar-dot fas fa-check" id="finish"></span>
+		</div>
+	</div>
+
+	<!--Form-->
+	<div class="purchase-form-container" id="address" data-icon-name="truck">
+		<h2>Address</h2>
+		<hr/>
+		<form class="purchase-form" id="address-form">
+			<label class="purchase-form-label" for="first-name-input">First Name</label>
+			<input class="purchase-form-input" type="text" name="first-name-input" id="first-name-input">
+			<label class="purchase-form-label" for="last-name-input">Last Name</label>
+			<input class="purchase-form-input" type="text" name="last-name-input" id="last-name-input">
+			<label class="purchase-form-label" for="phone-input">Phone Number</label>
+			<input class="purchase-form-input" type="text" name="phone-input" id="phone-input">
+			<label class="purchase-form-label" for="country-input">Country</label>
+			<input class="purchase-form-input" type="text" name="country-input" id="country-input">
+			<label class="purchase-form-label" for="city-input">City</label>
+			<input class="purchase-form-input" type="text" name="city-input" id="city-input">
+			<label class="purchase-form-label" for="address-input">Address</label>
+			<input class="purchase-form-input" type="text" name="address-input" id="address-input">
+			<label class="purchase-form-label" for="zipcode-input">Zipcode</label>
+			<input class="purchase-form-input" type="text" name="zipcode-input" id="zipcode-input">
+		</form>
+	</div>
+
+	<div class="purchase-form-container" id="payment" data-icon-name="credit-card">
+		<h2>Payment</h2>
+		<hr/>
+		<form class="purchase-form" id="payment-form">
+			<label class="purchase-form-label" for="payment-method-input">Select a payment method</label>
+			<select class="purchase-form-input" name="payment-method-input" id="payment-method-input">
+				<option value="credit">Credit card</option>
+			</select>
+			<label class="purchase-form-label" for="card-number-input">Card number</label>
+			<input class="purchase-form-input" type="text" name="card-number-input" id="card-number-input">
+			<label class="purchase-form-label" for="expiry-date-input">Expiry date</label>
+			<input class="purchase-form-input" type="text" name="expiry-date-input" id="expiry-date-input">
+			<label class="purchase-form-label" for="security-code-input">Security code</label>
+			<input class="purchase-form-input" type="text" name="security-code-input" id="security-code-input">
+		</form>
+	</div>
+
+	<!--Paused for now
+	<div class="purchase-items-grid-container">
+		<div class="purchase-items-grid">
+			<img class="purchase-item-image" src="images/cube-camo-thumbnail.png" alt="${cartItem.title} thumbnail">
+			<img class="purchase-item-image" src="images/cube-camo-thumbnail.png" alt="${cartItem.title} thumbnail">
+			<img class="purchase-item-image" src="images/cube-furry-thumbnail.png" alt="${cartItem.title} thumbnail">
+			<img class="purchase-item-image" src="images/cube-camo-thumbnail.png" alt="${cartItem.title} thumbnail">
+
+		</div>
+	</div>
+	-->
+	<p class="purchase-total-label">Total: $9999999.99</p>
+	<button type="button" class="purchase-continue-button">Continue</button>
+</body>

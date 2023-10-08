@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Unique and limited rubik's cubes.">
+	<meta name="author" content="Max Fu">
+	<meta name="keywords" content="rubik's cubes, rubik's cube, rubiks cubes, rubiks cube, rubik, rubiks, rubik's, rubix cubes, rubix cube, rubix, custom, limited">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://kit.fontawesome.com/aa07287191.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="responsive.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo-blue.svg"/>
+	<title>Shop</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="scripts/jquery.ui.touch-punch.min.js"></script>
+	<script src="scripts/shop-item-popup.js"></script>
+	<script src="scripts/create-shopItems.js"></script>
+	<script src="scripts/shop-item-setup.js"></script>
+	<script src="scripts/price-slider.js"></script>
+	<script src="scripts/header-responsiveness.js"></script>
+	<script src="scripts/cart-number.js"></script>
+</head>
+
+<body>
+	<!--Dark overlay for responsive header menu-->
+	<div class="header-responsive-overlay">
+	</div>
+
+	<!--Navbar-->
+	<header>
+		<!--Navbar logo-->
+		<a class="navbar navbar-logo" href="index.html">
+			<img class="navbar-logo-image" src="images/logo-blue.svg" alt="Navbar logo that goes to home page.">
+		</a>
+
+		<!--Navbar links-->
+        <div class="navbar navbar-links-container">
+            <a class="navbar-links" href="shop.html" id="navbar-links-shop">Shop</a>
+            <a class="navbar-links" href="about.html" id="navbar-links-about">About</a>
+            <a class="navbar-links" href="cart.html" id="navbar-links-cart">Cart</a>
+        </div>
+
+		<!--Navbar search bar-->
+		<div class="navbar navbar-search-bar-container">
+			<input type="text" class="navbar-search-bar" placeholder="search">
+		</div>
+
+		<!--Phone responsive-->
+		<span class="navbar-menu-icon fas fa-bars">
+		</span>
+		<!--Responsive menu-->
+		<div class="navbar-links-responsive-container">
+			<a class="navbar-links-responsive" href="index.html">Home</a>
+			<a class="navbar-links-responsive" href="shop.html">Shop</a>
+            <a class="navbar-links-responsive" href="about.html">About</a>
+            <a class="navbar-links-responsive" href="cart.html">Cart</a>
+		</div>
+
+		<span class="navbar-search-icon fas fa-search">
+		</span>
+	</header>
+
+    <!--Shop controls-->
+    <div class="shop-controls-container">
+        <!--Price slider-->
+        <div class="shop-control price-slider-container">
+			<p class="price-slider-label">Price</p>
+            <div class="price-slider"></div>
+			<p class="price-slider-min">$0.00</p>
+			<p class="price-slider-max">$99.99</p>
+			<p class="price-slider-current">$0.00</P>
+        </div>
+        <!--Show sold item checkbox-->
+        <div class="shop-control show-sold-items-checkbox-container">
+            <input type="checkbox" id="show-sold-items-checkbox" class="shop-controls-checkbox" checked=checked>
+            <label class="show-sold-items-checkbox-label" for="show-sold-items-checkbox">Show sold items</label>
+        </div>
+    </div>
+
+	<div class="shop-item-overlay">
+	</div>
+
+    <!--Shop grid container-->
+	<div class="shop-container">
+    	<div class="shop-grid-container">
+			<!--Shop item handled by javascript-->
+    	</div>
+	</div>
+</body>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Unique and limited rubik's cubes.">
+	<meta name="author" content="Max Fu">
+	<meta name="keywords" content="rubik's cubes, rubik's cube, rubiks cubes, rubiks cube, rubik, rubiks, rubik's, rubix cubes, rubix cube, rubix, custom, limited">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://kit.fontawesome.com/aa07287191.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="responsive.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo-blue.svg"/>
+	<title>Cart</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="scripts/cart-item-setup.js"></script>
+	<script src="scripts/header-responsiveness.js"></script>
+	<script src="scripts/cart-number.js"></script>
+</head>
+
+<body>
+	<!--Dark overlay for responsive header menu-->
+	<div class="header-responsive-overlay">
+	</div>
+
+	<!--Navbar-->
+	<header>
+		<!--Navbar logo-->
+		<a class="navbar navbar-logo" href="index.html">
+			<img class="navbar-logo-image" src="images/logo-blue.svg" alt="Navbar logo that goes to home page.">
+		</a>
+
+		<!--Navbar links-->
+        <div class="navbar navbar-links-container">
+            <a class="navbar-links" href="shop.html" id="navbar-links-shop">Shop</a>
+            <a class="navbar-links" href="about.html" id="navbar-links-about">About</a>
+            <a class="navbar-links" href="cart.html" id="navbar-links-cart">Cart</a>
+        </div>
+
+		<!--Navbar search bar-->
+		<div class="navbar navbar-search-bar-container">
+			<input type="text" class="navbar-search-bar" placeholder="search">
+		</div>
+
+		<!--Phone responsive-->
+		<span class="navbar-menu-icon fas fa-bars">
+		</span>
+		<!--Responsive menu-->
+		<div class="navbar-links-responsive-container">
+			<a class="navbar-links-responsive" href="index.html">Home</a>
+			<a class="navbar-links-responsive" href="shop.html">Shop</a>
+            <a class="navbar-links-responsive" href="about.html">About</a>
+            <a class="navbar-links-responsive" href="cart.html">Cart</a>
+		</div>
+
+		<span class="navbar-search-icon fas fa-search">
+		</span>
+	</header>
+
+	<!--Cart items-->
+	<div class="cart-items-container">
+		<!--Cart item handled by javascript-->
+
+		<!--Cart total-->
+		<div class="cart-item cart-total">
+			<p class="cart-total-title">Total:</p>
+		</div>
+		<div class="cart-item">
+			<p class="cart-total-price">$9999999.99</p>
+		</div>
+	</div>
+
+	<!--Checkout button-->
+	<div class="checkout-button-container">
+		<a href="purchase.html" class="checkout-button">Checkout</a>
+	</div>
+</body>

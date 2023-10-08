@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Unique and limited rubik's cubes.">
+	<meta name="author" content="Max Fu">
+	<meta name="keywords" content="rubik's cubes, rubik's cube, rubiks cubes, rubiks cube, rubik, rubiks, rubik's, rubix cubes, rubix cube, rubix, custom, limited">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://kit.fontawesome.com/aa07287191.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="responsive.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo-blue.svg"/>
+	<title>Cube Moments</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="scripts/create-shopItems.js"></script>
+	<script src="scripts/slideshow.js"></script>
+	<script src="scripts/header-responsiveness.js"></script>
+	<script src="scripts/cart-number.js"></script>
+</head>
+
+<body>
+	<!--Dark overlay for responsive header menu-->
+	<div class="header-responsive-overlay">
+	</div>
+
+	<!--Navbar-->
+	<header>
+		<!--Navbar logo-->
+		<a class="navbar navbar-logo" href="index.html">
+			<img class="navbar-logo-image" src="images/logo-blue.svg" alt="Navbar logo that goes to home page.">
+		</a>
+
+		<!--Navbar links-->
+        <div class="navbar navbar-links-container">
+            <a class="navbar-links" href="shop.html" id="navbar-links-shop">Shop</a>
+            <a class="navbar-links" href="about.html" id="navbar-links-about">About</a>
+            <a class="navbar-links" href="cart.html" id="navbar-links-cart">Cart</a>
+        </div>
+
+		<!--Navbar search bar-->
+		<div class="navbar navbar-search-bar-container">
+			<input type="text" class="navbar-search-bar" placeholder="search">
+		</div>
+
+		<!--Phone responsive-->
+		<span class="navbar-menu-icon fas fa-bars">
+		</span>
+		<!--Responsive menu-->
+		<div class="navbar-links-responsive-container">
+			<a class="navbar-links-responsive" href="index.html">Home</a>
+			<a class="navbar-links-responsive" href="shop.html">Shop</a>
+            <a class="navbar-links-responsive" href="about.html">About</a>
+            <a class="navbar-links-responsive" href="cart.html">Cart</a>
+		</div>
+
+		<span class="navbar-search-icon fas fa-search">
+		</span>
+	</header>
+
+	<div class="index-page-slideshow">
+		<h1 class="index-page-main-header">Cube Moments</h1>
+
+		<!--Slideshow-->
+		<div class="slideshow-container">
+			<!--Images added via javascript-->
+		</div>
+		<div class="slideshow-control-container">
+			<a class="slideshow-control slideshow-previous" onclick="addIndex(-1);resetTimer();">&#10094;</a>
+			<a class="slideshow-control slideshow-next" onclick="addIndex(1);resetTimer();">&#10095;</a>
+		</div>
+
+		<!--Button to shop-->
+		<div class="shop-link-button-container" id="slideshow-button-container">
+			<a href="shop.html" class="shop-link-button">See More</a>
+		</div>
+
+		<!--Slideshow dots-->
+		<div class="slideshow-dots-container">
+			<!--Dots added via javascript-->
+		</div>
+	</div>
+
+	<!--Page content-->
+	<div class="index-page-content">
+		<div class="index-page-section" id="section-1">
+			<div class="index-page-section-text">
+				<h2>Unique, Custom</h2>
+				<p>Our rubik's cubes are made of peculiar and exotic materials, bringing you a unique feel for playing or displaying. Our custom patterns can give new levels of challenges, through piecing together images or patterns.</p>
+			</div>
+			<img class="index-page-section-image" src="images/index-content-1.png" alt="Rubik's cube decoration for section text 1">
+		</div>
+		<div class="index-page-section" id="section-2">
+			<img class="index-page-section-image" src="images/index-content-2.png" alt="Rubik's cube decoration for section text 2">
+			<div class="index-page-section-text">
+				<h2>Limited!</h2>
+				<p>We only make one of each design, which means each rubik's cube will truly be unique. Once it's sold, it is gone. Forever. If you like a design, get it ASAP!</p>
+			</div>
+		</div>
+		<div class="shop-link-button-container">
+			<a href="shop.html" class="shop-link-button" id="content-button">Visit the shop!</a>
+		</div>
+	</div>
+
+	<!--Page footer-->
+	<footer>
+		<div class="footer-lists-container">
+			<div class="footer-container footer-links">
+				<h3 class="footer-header">Explore</h3>
+				<ul class="footer-list">
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+			<div class="footer-container footer-contacts">
+				<h3 class="footer-header">Contact</h3>
+				<ul class="footer-list">
+					<li><a href="">email@email.email</a></li>
+					<li><a href="">02123321</a></li>
+				</ul>
+			</div>
+			<div class="footer-container footer-legal">
+				<h3 class="footer-header">Legal</h3>
+				<ul class="footer-list">
+					<li><a href="tac.html">Terms and Conditions</a></li>
+					<li><a href="pp.html">Privacy policy</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<small class="footer-copyright">Copyright © 2021 Cube Moments, All Rights Reserved</small>
+	</footer>
+</body>
